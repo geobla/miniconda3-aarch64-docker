@@ -46,7 +46,7 @@ docker run -it -d -p 4350:8888 -v jupyter-data:/opt/notebooks --name jupyter my-
 
 ```
 This command maps port 4350 on your host machine to port 8888 inside the container. Feel free to choose a different host port.
-## 5. Access Jupyter Notebook:
+## 6. Access Jupyter Notebook:
 Once the container is running, access the Jupyter Notebook server in your web browser by visiting:
 ```bash
 http://localhost:4350/
@@ -58,7 +58,7 @@ http://localhost:4350/
 file:///root/.local/share/jupyter/runtime/jpserver-559-open.html Or copy and paste one of these URLs: http://localhost:8888/tree?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 - Copy - paste the URL to your browser and you are good to go!!
 - You can also create a password for additional security (Optional).
-## 6. Start Using Jupyter:
+## 7. Start Using Jupyter:
 You can now create and run Jupyter Notebooks within the Docker container. All your notebooks and data will be isolated within the container.
 ## Customization:
 You have the flexibility to customize the Dockerfile to include any additional Python packages or libraries required for your specific projects.
