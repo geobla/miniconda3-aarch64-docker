@@ -29,7 +29,7 @@ docker build -t my-miniconda-image .
 ```
 ## 4. Start a Jupyter Notebook server and interact with Anaconda via your browser::
 ```bash
-docker run -it -p 4350:8888 my-miniconda-image:latest /bin/sh -c "/opt/mambaforge/bin/conda install jupyter -y --quiet && mkdir -p /opt/notebooks && /opt/mambaforge/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
+docker run -it -d -p 4350:8888 my-miniconda-image:latest /bin/sh -c "/opt/mambaforge/bin/conda install jupyter -y --quiet && mkdir -p /opt/notebooks && /opt/mambaforge/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
 ```
 This command maps port 4350 on your host machine to port 8888 inside the container. Feel free to choose a different host port.
 ## 4. Access Jupyter Notebook:
